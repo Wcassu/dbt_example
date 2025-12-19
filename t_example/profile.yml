@@ -1,0 +1,10 @@
+t_example:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: athena-480723
+      dataset: "{{ env_var('DBT_DNAME', dbt_dw) }}"
+      threads: 4
+      keyfile: /home/wcassu/.dbt/athena-480723-47ba8f1df3f7.json
