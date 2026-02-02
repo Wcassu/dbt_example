@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: finance
+    description: "Dados brutos do sistema fianceiro da empresa"
+    schema: data_set_financial
+
+    tables:
+      - name: dados_financeiros
+        description: "Tabela com os lançamentos financeiros da empresa"
+        columns: 
+          - name: nome
+            description: "Nome do lançamento"
+          - name: data
+            description: "Data do lançamento"
+          - name: valor
+            description: "Valor do lançamento"
+          - name: status
+            description: "Status do lançamento"
+          - name: banco
+            description: "Banco do lançamento"
+          - name: destino
+            description: "Destino do lançamento"
+          - name: responsavel
+            description: "Responsavél do lançamento"
+          - name: tipo
+            description: "Tipo do lançamento"
+          - name: valor_real
+            description: "Valor Real do lançamento"
+          - name: categoria
+            description: "Categoria do lançamento"
+          - name: mes
+            description: "Mês do lançamento"
